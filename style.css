@@ -1,3 +1,8 @@
+/* 1920 px 
+https: //html5book.ru/adaptivnaya-vyorstka-sayta/
+http: //obuchaemsja.com/adaptivnaya-verstka/gibkaya-setka-v-verstke/
+https: //sozdaj-sam.com/html5-i-css3/gibkaya-razmetka-pri-verstke.html
+*/
 /* mightbe reset */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -17,7 +22,8 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
+    vertical-align: baseline;
+    box-sizing: border-box;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -42,14 +48,114 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/* base preferences */
 
-/* base universal classes */
+a {
+    text-decoration: none;
+    color: #191a1b;
+}
+/* base preferences */
+body {
+    font-family: 'Montserrat', Courier, monospace;
+    font-size: 1.313em;
+    line-height: 0.75em;
+    color: #191a1b;
+}
+
+.heading {
+    font-size: 2,342083356754176em;
+}
+
+.banner-text {
+    font-size: 3,847708371810432em;
+    color:#fff;
+}
+
 .clearfix::after {
     content: "";
     clear: both;
     display: table;
 }
+
+.container {
+    width: 100%;
+    max-width: 1230px;
+    margin:0 auto;
+}
+
+.container .column {
+    float:left;
+    margin: 0 0 1em;
+    padding: 0 1em;
+}
+
+.container .column.w-1 {
+    width: 8.333333333333333%;
+}
+
+.container .column.w-2 {
+    width: 16.66666666666667%;
+}
+
+.container .column.w-3 {
+    width: 25%;
+}
+.container .column.w-4 {
+    width: 33.33333333333333%;
+}
+
+.container .column.w-5 {
+    width: 41.66666666666667%;
+}
+
+.container .column.w-6 {
+    width: 50%;
+}
+
+.container .column.w-7 {
+    width: 58.33333333333333%;
+}
+
+.container .column.w-8 {
+    width: 66.66666666666667%;
+}
+
+.container .column.w-9 {
+    width: 75%;
+}
+.container .column.w-10 {
+    width: 83.33333333333333%;
+}
+.container .column.w-11 {
+    width: 91.66666666666666%;
+}
+.container .column.w-12 {
+    width: 100%;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.block-center {
+    margin: 0 auto;
+}
+
+.vertical-list {
+    list-style-image: url('./img/square.gif');
+}
+
+.horizontal-list li {
+    display: inline-block
+}
+/* header */
 
 /* section-1 */
 
