@@ -156,7 +156,34 @@ body {
     display: inline-block
 }
 /* header */
+.header .logo{
+    margin-top: 0.55em;
+    margin-bottom: 0.63em;
+}
 
+.header .logo img {
+    margin-left: 0.5em;
+}
+
+.header .nav {
+    margin-bottom: 0;
+}
+
+.header .nav li {
+    font-size: 0.75em;
+    margin-left: 1.4em;
+    margin-right: 0.7em;
+}
+
+.header .nav li a{
+    line-height: 3.5em;
+    display:block;
+    border-top:6px solid transparent;
+}
+
+.header .nav li a:hover {
+    border-top:6px solid #4858F2;
+}
 /* section-1 */
 
 /* section-2 */
