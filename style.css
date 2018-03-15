@@ -226,6 +226,21 @@ body {
 .section-2 {
     height: 14.8em;
 }
+.section-2 .container{
+    padding:0 0.7142857142857143em;
+    margin-top: 4.6em;
+}
+.section-2 .column.w-3 {
+    padding:0 0.7142857142857143em;
+}
+
+.section-2 .column.w-3.graph img{
+    margin-top: -0.4em;
+}
+
+.section-2 .column.w-3.eye img{
+    margin-right: 0.5em;
+}
 
 /* section-3 */
 
