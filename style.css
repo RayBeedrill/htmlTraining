@@ -337,7 +337,40 @@ body {
     line-height: 1.248em;
 }
 /* section-5 */
+.section-5 {
+    background-color: #F9F9F9;
+}
+.section-5 .container {
+    padding-top: 3.5em;
+    padding-bottom: 3.2em;
+}
 
+
+.section-5 .column.w-6.image {
+    padding: 0
+}
+
+.section-5 .column.w-6.image img {
+    display: block;
+    margin: 0 5.8em 0 auto;
+    max-width: 414px;
+    width: 100%;
+}
+
+.section-5 .column.w-6 .heading {
+    margin-top: 9px;
+}
+
+.section-5 .column.w-6 .vertical-list {
+    margin-left: 1.4em;
+}
+
+.section-5 .column.w-6 .vertical-list li {
+    margin-bottom: 1.5em;
+    padding: 0 0 0 0.6em;
+    letter-spacing: -0.45px;
+    line-height: 1.248em;
+}
 /* section-6 */
 
 /* section-7 */
