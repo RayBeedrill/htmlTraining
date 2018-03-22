@@ -66,7 +66,8 @@ body {
     line-height: 1.26em;
     font-size: 1.4em;
     text-transform: uppercase;
-    width: 553px;
+    max-width: 553px;
+    width:100%;
     margin-left: 10px;
     letter-spacing: -1.3px;
 }
@@ -306,7 +307,7 @@ body {
 }
 /* section-4 */
 .section-4 .container {
-    padding-top: 4.8em ;
+    padding-top: 5.2em;
     padding-bottom: 3.2em;
 }
 
@@ -342,7 +343,7 @@ body {
 }
 
 .section-5 .container {
-    padding-top: 3.5em;
+    padding-top: 3.7em;
     padding-bottom: 3.06em;
 }
 
@@ -375,7 +376,7 @@ body {
 /* section-6 */
 .section-6 .container {
     padding-top: 3.5em;
-    padding-bottom: 3.06em;
+    padding-bottom: 3.1em;
 }
 
 .section-6 .column.w-6 { 
@@ -394,7 +395,7 @@ body {
 }
 
 .section-6 .column.w-6 .heading {
-    margin-top: 9px;
+    margin-top: 18px;
 }
 
 .section-6 .column.w-6 .vertical-list {
@@ -413,11 +414,12 @@ body {
     background-image: url('./img/worker.png');
     background-repeat: no-repeat;
     background-position: right;
+    background-color: #F9F9F9;
 }
 
 .section-7 .container {
-    padding-top: 3.55em;
-    padding-bottom: 3.06em;
+    padding-top: 3.3em;
+    padding-bottom: 4.5em;
 }
 
 .section-7 .column.w-6 {
@@ -426,18 +428,167 @@ body {
 
 .section-7 .column.w-6 p {
     font-size: 0.7em;
-    margin-top: 2.4em;
+    margin-top: 2.2em;
     margin-left: 1.7em;
     letter-spacing: 0.55px;
-    line-height: 1.75em;
+    line-height: 1.8em;
 }
 .section-7 .column.w-6 .heading {
     margin-left: 0.75em;
+    margin-top: 0.3em;
+}
+
+.section-7 .column.w-6 .button{
+    margin-left: 1.6em;
+    margin-top: 2.6em;
+    font-size: 0.82em;
+    padding: 1.29em 1.7em;
+    letter-spacing: 1.5px;
 }
 /* section-8 */
+.section-8 .container {
+    padding-top: 3.7em;
+    padding-bottom: 4.2em;
+    padding-left: 0.7142857142857143em;
+    padding-right: 0.7142857142857143em;
+}
+
+.section-8 .column.w-4 {
+    padding: 0 0.2em;
+}
+
+.section-8 .container .card {
+    background-color: #F9F9F9;
+    margin-top: 39px;
+    margin-left: 10px;
+    width: 94%;
+}
+
+.section-8 .container .card h4{
+    background: #6581F6;
+    color: #fff;
+    line-height: 1;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 27px;
+    letter-spacing: 1px;
+    padding: 22px 0;
+    border-radius: 10px 10px 0 0;
+}
+
+
+.section-8 .container .card p{
+    line-height: 1.5em;
+    padding-top: 14px;
+    font-size: 0.7em;
+    margin: 0 auto;
+    letter-spacing: 0.7px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #EDEDED;
+}
+
+.section-8 .container .card p:last-child {
+    border-bottom:none;
+    padding: 0;
+    padding-bottom: 20px;
+    border-radius: 0 0 10px 10px;
+}
+
+.section-8 .container .card p .button {
+    margin-top: 18px;
+    padding: 0.8em 3.8em;
+    font-size: 1.2em;
+    letter-spacing: 1.2px;
+    background: #6581F6;
+}
+
+.section-8 .container .card:hover p .button,
+.section-8 .container .card:hover h4 {
+    cursor: pointer;
+    background: #4858F2;
+}
+
+.section-8 .container .partners-heading .heading {
+        max-width: 615px;
+        margin-top: 2.8em;
+}
+
+.section-8 .container .partners-logo-list ul li img {
+   display: block;
+   margin: 0 auto;
+   margin-top: 1.9em;
+}
+
+.section-8 .container .partners-logo-list ul .coca img {
+    margin-left: 0.952em;
+}
+
+.section-8 .container .partners-logo-list ul .lufasa img {
+    margin-top: 2.33em;
+    margin-left: 0;
+}
+
+.section-8 .container .partners-logo-list ul .health img {
+   margin-left: 2.14em;
+}
+
+.section-8 .container .partners-logo-list ul .blizz img {
+   margin-left: 3.095em;
+}
 
 /* section-9 */
+.section-9 {
+    background-image: url('./img/bg-2.png');
+}
 
+.section-9 .container {
+    padding-top: 3.8em;
+    padding-bottom: 4.2em;
+}
+
+.section-9 .heading {
+    color:#fff;
+    max-width: initial;
+    margin-left: initial;
+}
+
+.section-9 p {
+    padding-top: 41px;
+}
+
+.section-9 p .button {
+    padding: 0.9em 2.1em;
+    font-size: 0.9em;
+    letter-spacing: 1.2px;
+    margin-left: -22px;
+}
 /* footer */
+.footer {
+    background-color:#191A1B;
+}
+
+.footer .container {
+    padding-top:1.8em;
+    padding-bottom: 0.5em;
+}
+
+.footer .container .logo img { 
+    margin-top: 1.2em;
+    margin-right: 0.5em;
+}
+
+.footer .container .copyright a {
+    color:#4858F2;
+}
+
+.footer .social p,
+.footer .container .copyright li a ,
+.footer .container .copyright {
+    color:#fff;
+}
+
+.footer .social ul li {
+    margin-right: 1px;
+}
 
 /* media query */
