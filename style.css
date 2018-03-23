@@ -68,7 +68,7 @@ body {
     text-transform: uppercase;
     max-width: 553px;
     width:100%;
-    margin-left: 10px;
+    padding-left: 10px;
     letter-spacing: -1.3px;
 }
 
@@ -249,7 +249,8 @@ body {
     font-size: 0.9em;
     line-height: 1.3em;
     font-weight: 600;
-    width: 242px;
+    max-width: 242px;
+    width:100%;
     margin: 1.4em auto 0 1em;
     letter-spacing: -0.03em;
 }
@@ -410,11 +411,25 @@ body {
 }
 
 /* section-7 */
-.section-7.worker-bg {
+.section-7 {
+    background-color: #F9F9F9;
+    position: relative;
+}
+.section-7 .container{
+    overflow: auto;
+}
+
+.section-7 .worker-bg::after {
+    position: absolute;
     background-image: url('./img/worker.png');
     background-repeat: no-repeat;
-    background-position: right;
-    background-color: #F9F9F9;
+    background-position: center center;
+    background-size: cover;
+    width:49.3%;
+    content: '';
+    top: 0;
+    right: 0;
+    height: 100%;
 }
 
 .section-7 .container {
@@ -434,7 +449,7 @@ body {
     line-height: 1.8em;
 }
 .section-7 .column.w-6 .heading {
-    margin-left: 0.75em;
+    padding-left: 0.75em;
     margin-top: 0.3em;
 }
 
@@ -569,7 +584,7 @@ body {
 
 .footer .container {
     padding-top:1.8em;
-    padding-bottom: 0.5em;
+    padding-bottom: 2em;
 }
 
 .footer .container .logo img { 
@@ -581,6 +596,11 @@ body {
     color:#4858F2;
 }
 
+.footer .social-block {
+    margin-right: 7px;
+    letter-spacing: 0.5px;
+}
+
 .footer .social p,
 .footer .container .copyright li a ,
 .footer .container .copyright {
@@ -588,7 +608,74 @@ body {
 }
 
 .footer .social ul li {
-    margin-right: 1px;
+    margin-right: 3px;
+    margin-top: 0.5em;
 }
 
+.footer .social p {
+    margin-top: 1.25em;
+    font-size: 0.7em;
+}
+
+.footer .container .copyright ul{ 
+     font-size: 0.7em;
+     margin-top: 4px;
+}
+
+.footer .container .copyright li {
+    margin-left:0.7em;
+}
+
+.footer .container .copyright .who {
+   font-size: 0.7em;
+   margin-top: 23px;
+}
+
+.footer .container .copyright .year {
+   font-size: 0.7em;
+   margin-top: 20px;
+}
+
+.footer .container .copyright p > a {
+   font-size: 1.5em;
+   margin-left: 3.3em;
+}
 /* media query */
+@media only screen and (max-width: 1140px) {
+    br {
+        display: none;
+    }
+    .section-1 .container .text {
+        width: 100%;
+        text-align: center
+    }
+
+    .section-1 .container .empty {
+        display: none;
+    }
+
+    .section-2 .column.w-3 p,
+    .section-2 .column.w-3.eye p,
+    .section-2 .column.w-3.customer p,
+    .section-2 .column.w-3.graph p {
+        margin-left: 0;
+    }
+
+    .section-6 .column.w-6.image img {
+        margin-left: 3em;
+    }
+
+    .section-7 .column.w-6 .heading {
+        margin-left: 0;
+    }
+
+    .section-8 .container .partners-logo-list ul .coca img, 
+    .section-8 .container .partners-logo-list ul .lufasa img,
+    .section-8 .container .partners-logo-list ul .health img, 
+    .section-8 .container .partners-logo-list ul .blizz img {
+        margin-left: 0;
+        text-align: center;
+        display: block;
+        width: 100%;
+    }
+}
